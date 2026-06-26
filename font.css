@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Akota Bold';
+    src: url('fontfamily/helveticaNeueBlack/HelveticaNeueBold.otf') format('opentype');
+  }
+
+@font-face {
+    font-family: 'Akota Medium';
+    src: url('fontfamily/helveticaNeueBlack/HelveticaNeueMedium.otf') format('opentype');
+  }
+
+@font-face {
+    font-family: 'Akota Light';
+    src: url('fontfamily/helveticaNeueBlack/HelveticaNeueLight.otf') format('opentype');
+  }

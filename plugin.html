@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Akota Plugin</title>
+    <link rel="stylesheet" href="font.css">
+    <link rel='stylesheet' href='plugin.css'>
+    <link rel="stylesheet" href="commonbookingform.css">
+    <script src="plugin.js" defer></script>
+</head>
+<body>
+    <!--Private Workspace-->
+    <div class="workspace-buy-now-plugin-button-div" id="private-workspace-buy-now-plugin-button-div">
+        <button class="contact-us-plugin-button"   id="private-office-contact-us-plugin-button"    onclick="contactus()">Contact Us</button>
+        <button class="contact-us-plugin-button"   id="team-office-suite-contact-us-plugin-button" onclick="contactus()">Contact Us</button>
+        <button class="contact-us-plugin-button"   id="studio-office-contact-us-plugin-button"     onclick="contactus()">Contact Us</button>
+        <button class="contact-us-plugin-button"   id="managed-office-contact-us-plugin-button"    onclick="contactus()">Contact Us</button>
+    </div>
+    <!--Private Workspace-->
+
+    <!--Shared Workspace-->
+    <div class="workspace-buy-now-plugin-button-div" id="shared-workspace-buy-now-plugin-button-div">
+        <button class="buy-now-plugin-button" id="day-plan-buy-now-plugin-button">Buy Now</button>
+            <!--Day Plan-->
+            <div class="background-freeze-div" id="day-plan-background-freeze-div">
+                <div class="plan-buy-now-plugin-button-div" id="day-plan-buy-now-plugin-button-div">
+                    <button class="buy-now-plugin-button" id="hot-desk-buy-now-plugin-button">Hot Desk</button>
+                    <button class="buy-now-plugin-button" id="day-office-buy-now-plugin-button">Day Office</button>
+                </div>
+            </div>
+            <!--Day Plan-->
+        <button class="buy-now-plugin-button" id="dedicated-desk-buy-now-plugin-button">Buy Now</button>
+        <button class="buy-now-plugin-button" id="flexible-desk-buy-now-plugin-button">Buy Now</button>
+        <button class="buy-now-plugin-button" id="virtual-office-buy-now-plugin-button">Buy Now</button>
+    </div>
+    <!--Shared Workspace-->
+
+    <!--Collaborative Workspace-->
+    <div class="workspace-buy-now-plugin-button-div" id="collaborative-workspace-buy-now-plugin-button-div">
+        <button class="buy-now-plugin-button" id="meeting-room-buy-now-plugin-button">Buy Now</button>
+            <!--Meeting Room-->
+            <div class="background-freeze-div" id="meeting-room-plan-background-freeze-div">
+                <div class="plan-buy-now-plugin-button-div" id="meeting-room-plan-buy-now-plugin-button-div">
+                    <button class="buy-now-plugin-button" id="conference-room-buy-now-plugin-button">Conference Room</button>
+                    <button class="buy-now-plugin-button" id="alap-room-buy-now-plugin-button">Alap Room</button>
+                    <button class="buy-now-plugin-button" id="alochona-room-buy-now-plugin-button">Alochona Room</button>
+                    <button class="buy-now-plugin-button" id="colorburst-room-buy-now-plugin-button">Colorburst Room</button>
+                </div>
+            </div>
+            <!--Meeting Room-->
+        <button class="buy-now-plugin-button" id="event-space-buy-now-plugin-button">Buy Now</button>
+        <button class="buy-now-plugin-button" id="zoom-call-room-buy-now-plugin-button">Buy Now</button>
+        <button class="buy-now-plugin-button" id="podcast-room-buy-now-plugin-button">Buy Now</button>
+    </div>
+    <!--Collaborative Workspace-->
+
+    <!--Demo-->
+    <div id="demo"></div>
+
+    <!--Common Booking Form-->
+    <form class="booking-form" id="common-booking-form">
+        <!--Header Div-->
+        <div class="booking-form-header-div" id="common-booking-form-header-div">
+            <!--Heading Div-->
+            <div class="booking-form-header-heading-div"     id="common-booking-form-header-heading-div">
+                <h1 class="booking-form-header-heading-h1"   id="booking-form-header-heading-h1-membership-booking">Membership Booking</h1>
+                <img class="booking-form-header-heading-img" id="booking-form-header-heading-img-close-icon" src="image/close.png" alt="Close Icon">
+            </div>
+            <!--Heading Div-->
+            <!--Info Div-->
+            <div class="booking-form-header-info-div" id="common-booking-form-header-info-div">
+                <!--Step Div-->
+                <div class="booking-form-header-info-step-div" id="common-booking-form-header-info-step-div">
+                    <div class="booking-form-header-info-step-all-step-div" id="booking-form-header-info-step-one-step-div">
+                        <div class="booking-form-header-info-step-all-step-number-div"  id="booking-form-header-info-step-all-step-number-one-div">1</div>
+                        <h3 class="booking-form-header-info-step-all-step-name-h3"      id="booking-form-header-info-step-all-step-name-h3-plan-type">Plan Type</h3>
+                    </div>
+                    <div class="booking-form-header-info-step-all-step-div" id="booking-form-header-info-step-two-step-div">
+                        <div class="booking-form-header-info-step-all-step-number-div" id="booking-form-header-info-step-all-step-number-two-div">2</div>
+                        <h3 class="booking-form-header-info-step-all-step-name-h3"     id="booking-form-header-info-step-all-step-name-h3-agreement-details">Agreement Details</h3>
+                    </div>
+                    <div class="booking-form-header-info-step-all-step-div" id="booking-form-header-info-step-three-step-div">
+                        <div class="booking-form-header-info-step-all-step-number-div" id="booking-form-header-info-step-all-step-number-three-div">3</div>
+                        <h3 class="booking-form-header-info-step-all-step-name-h3"     id="booking-form-header-info-step-all-step-name-h3-personal-information">Personal Information</h3>
+                    </div>
+                    <div class="booking-form-header-info-step-all-step-div" id="booking-form-header-info-step-four-step-div">
+                        <div class="booking-form-header-info-step-all-step-number-div" id="booking-form-header-info-step-all-step-number-four-div">4</div>
+                        <h3 class="booking-form-header-info-step-all-step-name-h3"     id="booking-form-header-info-step-all-step-name-h3-payment-information">Payment Information</h3>
+                    </div>
+                </div>
+                <!--Step Div-->
+                <!--User Data Div-->
+                <div class="booking-form-header-info-user-data-div" id="common-booking-form-header-info-user-data-div">
+                    <div class="booking-form-header-info-user-data-all-div" id="booking-form-header-info-user-data-plan-type-div">
+                        <div class="booking-form-header-info-user-data-all-div-image-h1-div" id="booking-form-header-info-user-data-all-div-image-h1-plan-type-div">
+                            <img class="booking-form-header-info-user-data-all-div-image" id="booking-form-header-info-user-data-all-div-image-plan-type" src="image/plan_type.png" alt="Plan Type Icon">
+                            <h1  class="booking-form-header-info-user-data-all-div-h1"    id="booking-form-header-info-user-data-all-div-h1-plan-type">Plan Type</h1>
+                        </div>
+                        <div class="booking-form-header-info-user-data-all-div-value-div" id="booking-form-header-info-user-data-all-div-value-plan-type-div">
+                            <span class="booking-form-header-info-user-data-all-div-value-div-span" id="booking-form-header-info-user-data-all-div-value-div-span-1-plan-type"></span>
+                            <span class="booking-form-header-info-user-data-all-div-value-div-span" id="booking-form-header-info-user-data-all-div-value-div-span-2-plan-type"></span>
+                        </div>
+                    </div>
+                    <div class="booking-form-header-info-user-data-all-div" id="booking-form-header-info-user-data-number-of-people-div">
+                        <div class="booking-form-header-info-user-data-all-div-image-h1-div" id="booking-form-header-info-user-data-all-div-image-h1-number-of-people-div">
+                            <img class="booking-form-header-info-user-data-all-div-image" id="booking-form-header-info-user-data-all-div-image-number-of-people" src="image/number_of_people.png" alt="Number Of People Icon">
+                            <h1 class="booking-form-header-info-user-data-all-div-h1"     id="booking-form-header-info-user-data-all-div-h1-number-of-people">No. of People</h1>
+                        </div>
+                        <div class="booking-form-header-info-user-data-all-div-value-div" id="booking-form-header-info-user-data-all-div-value-number-of-people-div">
+                            <span class="booking-form-header-info-user-data-all-div-value-div-span" id="booking-form-header-info-user-data-all-div-value-div-span-number-of-people">0</span>
+                        </div>
+                    </div>
+                    <div class="booking-form-header-info-user-data-all-div" id="booking-form-header-info-user-data-start-date-div">
+                        <div class="booking-form-header-info-user-data-all-div-image-h1-div" id="booking-form-header-info-user-data-all-div-image-h1-start-date-div">
+                            <img class="booking-form-header-info-user-data-all-div-image" id="booking-form-header-info-user-data-all-div-image-start-date" src="image/date.png" alt="Start Date Icon">
+                            <h1 class="booking-form-header-info-user-data-all-div-h1"     id="booking-form-header-info-user-data-all-div-h1-start-date">Start Date</h1>
+                        </div>
+                        <div class="booking-form-header-info-user-data-all-div-value-div" id="booking-form-header-info-user-data-all-div-value-start-date-div">
+                            <span class="booking-form-header-info-user-data-all-div-value-div-span" id="booking-form-header-info-user-data-all-div-value-div-span-start-date"></span>
+                        </div>
+                    </div>
+                    <div class="booking-form-header-info-user-data-all-div" id="booking-form-header-info-user-data-duration-div">
+                        <div class="booking-form-header-info-user-data-all-div-image-h1-div" id="booking-form-header-info-user-data-all-div-image-h1-duration-div">
+                            <img class="booking-form-header-info-user-data-all-div-image" id="booking-form-header-info-user-data-all-div-image-duration" src="image/duration.png" alt="Duration Icon">
+                            <h1 class="booking-form-header-info-user-data-all-div-h1"     id="booking-form-header-info-user-data-all-div-h1-duration">Duration</h1>
+                        </div>
+                        <div class="booking-form-header-info-user-data-all-div-value-div" id="booking-form-header-info-user-data-all-div-value-duration-div">
+                            <span class="booking-form-header-info-user-data-all-div-value-div-span" id="booking-form-header-info-user-data-all-div-value-div-span-duration"></span>
+                        </div>
+                    </div>
+                    <div class="booking-form-header-info-user-data-all-div" id="booking-form-header-info-user-data-monthly-cost-div">
+                        <div class="booking-form-header-info-user-data-all-div-h3-div" id="booking-form-header-info-user-data-all-div-h3-monthly-cost-div">
+                            <h3 class="booking-form-header-info-user-data-all-div-h3" id="booking-form-header-info-user-data-all-div-h3-monthly-cost">Monthly Cost</h3>
+                        </div>
+                        <div class="booking-form-header-info-user-data-all-div-value-p-span-div" id="booking-form-header-info-user-data-all-div-value-p-span-monthly-cost-div">
+                            <p class="booking-form-header-info-user-data-all-div-value-p" id="booking-form-header-info-user-data-all-div-value-p-bdt">BDT <span class="booking-form-header-info-user-data-all-div-value-span" id="booking-form-header-info-user-data-all-div-value-span-taka">0</span>/-</p>
+                        </div>
+                    </div>
+                </div>
+                <!--User Data Div-->
+            </div>
+            <!--Info Div-->
+        </div>
+        <!--Header Div-->
+        <!--Plan Type Input Div-->
+        <div class="booking-form-user-input-div" id="plan-type-booking-form-user-input-div">
+            <div class="booking-form-user-input-div-plan-type-selection-div" id="booking-form-user-input-div-plan-type-hot-desk-selection-div">
+                <div class="booking-form-user-input-div-plan-type-selection-header-div" id="booking-form-user-input-div-plan-type-hot-desk-selection-header-div">
+                    <p class="booking-form-user-input-div-plan-type-selection-header-div-title-p" id="booking-form-user-input-div-plan-type-selection-header-div-hot-desk-title-p">Hot Desk</p>
+                    <p class="booking-form-user-input-div-plan-type-selection-header-div-bdt-p" id="booking-form-user-input-div-plan-type-selection-header-div-hot-desk-bdt-p">BDT</p>
+                </div>
+                <div class="booking-form-user-input-div-plan-type-selection-input-div" id="booking-form-user-input-div-plan-type-hot-desk-selection-input-div">
+
+                </div>
+                <div class="booking-form-user-input-div-plan-type-selection-description-div" id="booking-form-user-input-div-plan-type-hot-desk-selection-description-div">
+
+                </div>
+            </div>
+            <div class="booking-form-user-input-div-plan-type-selection-div" id="booking-form-user-input-div-plan-type-day-office-selection-div">
+                <div class="booking-form-user-input-div-plan-type-selection-header-div" id="booking-form-user-input-div-plan-type-day-office-selection-header-div">
+                    <p class="booking-form-user-input-div-plan-type-selection-header-div-title-p" id="booking-form-user-input-div-plan-type-selection-header-div-day-office-title-p">Day Office</p>
+                    <p class="booking-form-user-input-div-plan-type-selection-header-div-bdt-p" id="booking-form-user-input-div-plan-type-selection-header-div-day-office-bdt-p">BDT</p>
+                </div>
+                <div class="booking-form-user-input-div-plan-type-selection-input-div" id="booking-form-user-input-div-plan-type-day-office-selection-input-div">
+
+                </div>
+                <div class="booking-form-user-input-div-plan-type-selection-description-div" id="booking-form-user-input-div-plan-type-day-office-selection-description-div">
+
+                </div>
+            </div>
+            <div class="booking-form-user-input-div-plan-type-selection-div" id="booking-form-user-input-div-plan-type-dedicated-desk-selection-div">
+                <div class="booking-form-user-input-div-plan-type-selection-header-div" id="booking-form-user-input-div-plan-type-dedicated-desk-selection-header-div">
+                    <p class="booking-form-user-input-div-plan-type-selection-header-div-title-p" id="booking-form-user-input-div-plan-type-selection-header-div-dedicated-desk-title-p">Dedicated Desk</p>
+                    <p class="booking-form-user-input-div-plan-type-selection-header-div-bdt-p" id="booking-form-user-input-div-plan-type-selection-header-div-dedicated-desk-bdt-p">BDT</p>
+                </div>
+                <div class="booking-form-user-input-div-plan-type-selection-input-div" id="booking-form-user-input-div-plan-type-dedicated-desk-selection-input-div">
+
+                </div>
+                <div class="booking-form-user-input-div-plan-type-selection-description-div" id="booking-form-user-input-div-plan-type-dedicated-desk-selection-description-div">
+
+                </div>
+            </div>
+            <div class="booking-form-user-input-div-plan-type-selection-div" id="booking-form-user-input-div-plan-type-flexible-desk-selection-div">
+                <div class="booking-form-user-input-div-plan-type-selection-header-div" id="booking-form-user-input-div-plan-type-flexible-desk-selection-header-div">
+                    <p class="booking-form-user-input-div-plan-type-selection-header-div-title-p" id="booking-form-user-input-div-plan-type-selection-header-div-flexible-desk-title-p">Flexible Desk</p>
+                    <p class="booking-form-user-input-div-plan-type-selection-header-div-bdt-p" id="booking-form-user-input-div-plan-type-selection-header-div-flexible-desk-bdt-p">BDT</p>
+                </div>
+                <div class="booking-form-user-input-div-plan-type-selection-input-div" id="booking-form-user-input-div-plan-type-flexible-desk-selection-input-div">
+
+                </div>
+                <div class="booking-form-user-input-div-plan-type-selection-description-div" id="booking-form-user-input-div-plan-type-flexible-desk-selection-description-div">
+
+                </div>
+            </div>
+            <div class="booking-form-user-input-div-plan-type-selection-div" id="booking-form-user-input-div-plan-type-virtual-office-selection-div">
+                <div class="booking-form-user-input-div-plan-type-selection-header-div" id="booking-form-user-input-div-plan-type-virtual-office-selection-header-div">
+                    <p class="booking-form-user-input-div-plan-type-selection-header-div-title-p" id="booking-form-user-input-div-plan-type-selection-header-div-virtual-office-title-p">Virtual Office</p>
+                    <p class="booking-form-user-input-div-plan-type-selection-header-div-bdt-p" id="booking-form-user-input-div-plan-type-selection-header-div-virtual-office-bdt-p">BDT</p>
+                </div>
+                <div class="booking-form-user-input-div-plan-type-selection-input-div" id="booking-form-user-input-div-plan-type-virtual-office-selection-input-div">
+
+                </div>
+                <div class="booking-form-user-input-div-plan-type-selection-description-div" id="booking-form-user-input-div-plan-type-virtual-office-selection-description-div">
+
+                </div>
+            </div>
+            <div class="booking-form-user-input-div-plan-type-selection-div" id="booking-form-user-input-div-plan-type-conference-room-selection-div">
+                <div class="booking-form-user-input-div-plan-type-selection-header-div" id="booking-form-user-input-div-plan-type-conference-room-selection-header-div">
+                    <p class="booking-form-user-input-div-plan-type-selection-header-div-title-p" id="booking-form-user-input-div-plan-type-selection-header-div-conference-room-title-p">Conference Room</p>
+                    <p class="booking-form-user-input-div-plan-type-selection-header-div-bdt-p" id="booking-form-user-input-div-plan-type-selection-header-div-conference-room-bdt-p">BDT</p>
+                </div>
+                <div class="booking-form-user-input-div-plan-type-selection-input-div" id="booking-form-user-input-div-plan-type-conference-room-selection-input-div">
+
+                </div>
+                <div class="booking-form-user-input-div-plan-type-selection-description-div" id="booking-form-user-input-div-plan-type-conference-room-selection-description-div">
+
+                </div>
+            </div>
+            <div class="booking-form-user-input-div-plan-type-selection-div" id="booking-form-user-input-div-plan-type-alap-room-selection-div">
+                <div class="booking-form-user-input-div-plan-type-selection-header-div" id="booking-form-user-input-div-plan-type-alap-room-selection-header-div">
+                    <p class="booking-form-user-input-div-plan-type-selection-header-div-title-p" id="booking-form-user-input-div-plan-type-selection-header-div-alap-room-title-p">Alap Room</p>
+                    <p class="booking-form-user-input-div-plan-type-selection-header-div-bdt-p" id="booking-form-user-input-div-plan-type-selection-header-div-alap-room-bdt-p">BDT</p>
+                </div>
+                <div class="booking-form-user-input-div-plan-type-selection-input-div" id="booking-form-user-input-div-plan-type-alap-room-selection-input-div">
+
+                </div>
+                <div class="booking-form-user-input-div-plan-type-selection-description-div" id="booking-form-user-input-div-plan-type-alap-room-selection-description-div">
+
+                </div>
+            </div>
+            <div class="booking-form-user-input-div-plan-type-selection-div" id="booking-form-user-input-div-plan-type-alochona-room-selection-div">
+                <div class="booking-form-user-input-div-plan-type-selection-header-div" id="booking-form-user-input-div-plan-type-alochona-room-selection-header-div">
+                    <p class="booking-form-user-input-div-plan-type-selection-header-div-title-p" id="booking-form-user-input-div-plan-type-selection-header-div-alochona-room-title-p">Alochona Room</p>
+                    <p class="booking-form-user-input-div-plan-type-selection-header-div-bdt-p" id="booking-form-user-input-div-plan-type-selection-header-div-alochona-room-bdt-p">BDT</p>
+                </div>
+                <div class="booking-form-user-input-div-plan-type-selection-input-div" id="booking-form-user-input-div-plan-type-alochona-room-selection-input-div">
+
+                </div>
+                <div class="booking-form-user-input-div-plan-type-selection-description-div" id="booking-form-user-input-div-plan-type-alochona-room-selection-description-div">
+
+                </div>
+            </div>
+            <div class="booking-form-user-input-div-plan-type-selection-div" id="booking-form-user-input-div-plan-type-colorburst-room-selection-div">
+                <div class="booking-form-user-input-div-plan-type-selection-header-div" id="booking-form-user-input-div-plan-type-colorburst-room-selection-header-div">
+                    <p class="booking-form-user-input-div-plan-type-selection-header-div-title-p" id="booking-form-user-input-div-plan-type-selection-header-div-colorburst-room-title-p">Colorburst Room</p>
+                    <p class="booking-form-user-input-div-plan-type-selection-header-div-bdt-p" id="booking-form-user-input-div-plan-type-selection-header-div-colorburst-room-bdt-p">BDT</p>
+                </div>
+                <div class="booking-form-user-input-div-plan-type-selection-input-div" id="booking-form-user-input-div-plan-type-colorburst-room-selection-input-div">
+
+                </div>
+                <div class="booking-form-user-input-div-plan-type-selection-description-div" id="booking-form-user-input-div-plan-type-colorburst-room-selection-description-div">
+
+                </div>
+            </div>
+            <div class="booking-form-user-input-div-plan-type-selection-div" id="booking-form-user-input-div-plan-type-zoom-call-room-selection-div">
+                <div class="booking-form-user-input-div-plan-type-selection-header-div" id="booking-form-user-input-div-plan-type-zoom-call-room-selection-header-div">
+                    <p class="booking-form-user-input-div-plan-type-selection-header-div-title-p" id="booking-form-user-input-div-plan-type-selection-header-div-zoom-call-room-title-p">Zoom Call Room</p>
+                    <p class="booking-form-user-input-div-plan-type-selection-header-div-bdt-p" id="booking-form-user-input-div-plan-type-selection-header-div-zoom-call-room-bdt-p">BDT</p>
+                </div>
+                <div class="booking-form-user-input-div-plan-type-selection-input-div" id="booking-form-user-input-div-plan-type-zoom-call-room-selection-input-div">
+
+                </div>
+                <div class="booking-form-user-input-div-plan-type-selection-description-div" id="booking-form-user-input-div-plan-type-zoom-call-room-selection-description-div">
+
+                </div>
+            </div>
+            <div class="booking-form-user-input-div-plan-type-selection-div" id="booking-form-user-input-div-plan-type-podcast-studio-selection-div">
+                <div class="booking-form-user-input-div-plan-type-selection-header-div" id="booking-form-user-input-div-plan-type-podcast-studio-selection-header-div">
+                    <p class="booking-form-user-input-div-plan-type-selection-header-div-title-p" id="booking-form-user-input-div-plan-type-selection-header-div-podcast-studio-title-p">Podcast Studio</p>
+                    <p class="booking-form-user-input-div-plan-type-selection-header-div-bdt-p" id="booking-form-user-input-div-plan-type-selection-header-div-podcast-studio-bdt-p">BDT</p>
+                </div>
+                <div class="booking-form-user-input-div-plan-type-selection-input-div" id="booking-form-user-input-div-plan-type-podcast-studio-selection-input-div">
+
+                </div>
+                <div class="booking-form-user-input-div-plan-type-selection-description-div" id="booking-form-user-input-div-plan-type-podcast-studio-selection-description-div">
+
+                </div>
+            </div>
+            <button class="booking-form-user-input-continue-button" id="plan-type-booking-form-user-input-continue-button" type="button">Continue</button>
+        </div>
+        <!--Plan Type Input Div-->
+        <div class="booking-form-user-input-div" id="agreement-details-booking-form-user-input-div">
+            Agreement Details
+            <div class="booking-form-user-input-back-continue-button-div" id="agreement-details-booking-form-user-input-back-continue-button-div">
+                <button class="booking-form-user-input-back-button" id="agreement-details-booking-form-user-input-back-button" type="button">Back</button>
+                <button class="booking-form-user-input-continue-button" id="agreement-details-booking-form-user-input-continue-button" type="button">Continue</button>
+            </div>
+        </div>
+        <div class="booking-form-user-input-div" id="personal-information-booking-form-user-input-div">
+            Personal Information
+            <div class="booking-form-user-input-back-continue-button-div" id="agreement-details-booking-form-user-input-back-continue-button-div">
+                <button class="booking-form-user-input-back-button"     id="personal-information-booking-form-user-input-back-button" type="button">Back</button>
+                <button class="booking-form-user-input-continue-button" id="personal-information-booking-form-user-input-continue-button" type="button">Continue</button>
+            </div>
+        </div>
+        <div class="booking-form-user-input-div" id="payment-information-booking-form-user-input-div">
+            Payment Information
+            <div class="booking-form-user-input-back-continue-button-div" id="agreement-details-booking-form-user-input-back-continue-button-div">
+                <button class="booking-form-user-input-back-button"     id="payment-information-booking-form-user-input-back-button" type="button">Back</button>
+                <button class="booking-form-user-input-continue-button" id="payment-information-booking-form-user-input-continue-button" type="submit">Booking Summary</button>
+            </div>
+        </div>
+    </form>
+    <!--Common Booking Form-->
+
+</body>
+</html>

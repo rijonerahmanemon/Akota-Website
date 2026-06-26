@@ -1,0 +1,594 @@
+.booking-form {
+    width: 60vw;
+    height: 98vh;
+
+    background-color: #ffffff;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 9999;
+
+    border-width: 0.06vw;
+    border-color: #000000;
+    border-style: solid;
+    border-radius: 0.5vw;
+}
+
+.booking-form-header-div {
+    width: 95%;
+    height: 33%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 3vh;
+}
+
+.booking-form-header-heading-div {
+    width: 100%;
+    height: 25%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booking-form-header-heading-h1 {
+    font-family: 'Akota Bold';
+    font-size: 2.3vw;
+
+    color: #000000;
+}
+
+.booking-form-header-heading-img {
+    width: 2.2vw;
+    height: 2.2vw;
+
+    cursor: pointer;
+}
+
+.booking-form-header-info-div {
+    width: 99%;
+    height: 75%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form-header-info-step-div {
+    width: 100%;
+    height: 62%;
+
+    background-color: #F2F2F2;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border-width: 0.06vw;
+    border-color: #F2F2F2;
+    border-style: solid;
+    border-radius: 0.3vw 0.3vw 0 0;
+}
+
+.booking-form-header-info-step-all-step-div {
+    width: 25%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-form-header-info-step-all-step-number-div {
+    width: 3vw;
+    height: 3vw;
+
+    font-family: 'Akota Bold';
+    font-size: 1.4vw;
+    font-weight: bold;
+    
+    background-color: #ffffff;
+    color: #000000;
+
+    margin-bottom: 0.6vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border-width: 0.06vw;
+    border-color: #ffffff;
+    border-style: solid;
+    border-radius: 100%;
+}
+
+.booking-form-header-info-step-all-step-number-div-active {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.booking-form-header-info-step-all-step-name-h3 {
+    font-family: 'Akota Bold';
+    font-size: 1vw;
+}
+
+.booking-form-header-info-user-data-div {
+    width: 100%;
+    height: 38%;
+
+    display: flex;
+    flex-direction: row;
+
+    border-width: 0.06vw;
+    border-color: #000000;
+    border-style: solid;
+}
+
+.booking-form-header-info-user-data-all-div {
+    width: 20%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ffffff;
+
+    border-width: 0 0.06vw 0 0;
+    border-color: #000000;
+    border-style: solid;
+}
+
+#booking-form-header-info-user-data-monthly-cost-div {
+    background-color: #000000;
+}
+
+.booking-form-header-info-user-data-all-div-image-h1-div {
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#booking-form-header-info-user-data-all-div-h3-monthly-cost-div {
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#booking-form-header-info-user-data-all-div-image-plan-type {
+    width: 1vw;
+    height: 1.6vw;
+}
+
+#booking-form-header-info-user-data-all-div-image-number-of-people {
+    width: 1.5vw;
+    height: 1.7vw;
+}
+
+#booking-form-header-info-user-data-all-div-image-start-date {
+    width: 1.5vw;
+    height: 1.7vw;
+}
+
+#booking-form-header-info-user-data-all-div-image-duration {
+    width: 1.3vw;
+    height: 1.6vw;
+}
+
+.booking-form-header-info-user-data-all-div-h1 {
+    font-family: 'Akota Bold';
+    font-size: 0.8vw;
+    
+    color: #000000;
+
+    margin-left: 1vw;
+}
+
+#booking-form-header-info-user-data-all-div-h3-monthly-cost {
+    font-family: 'Akota Bold';
+    font-size: 1vw;
+
+    color: #ffffff;
+}
+
+.booking-form-header-info-user-data-all-div-value-div {
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#booking-form-header-info-user-data-all-div-value-p-span-monthly-cost-div {
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.booking-form-header-info-user-data-all-div-value-div-span {
+    font-family: 'Akota Medium';
+    font-size: 1vw;
+
+    color: #000000;
+}
+
+#booking-form-header-info-user-data-all-div-value-div-span-1-plan-type {
+    font-family: 'Akota Bold';
+    font-size: 0.7vw;
+}
+
+#booking-form-header-info-user-data-all-div-value-div-span-2-plan-type {
+    font-size: 0.7vw;
+}
+
+#booking-form-header-info-user-data-all-div-value-div-span-start-date {
+    font-size: 0.9vw;
+}
+
+#booking-form-header-info-user-data-all-div-value-div-span-duration {
+    font-size: 0.9vw;
+}
+
+#booking-form-header-info-user-data-all-div-value-p-bdt {
+    font-family: 'Akota Bold';
+    font-size: 1.1vw;
+    font-weight: bold;
+
+    color: #ffffff;
+}
+
+#booking-form-header-info-user-data-all-div-value-span-taka {
+    font-family: 'Akota Light';
+    font-size: 1.1vw;
+
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+.booking-form-user-input-div {
+    width: 95%;
+    height: 60%;
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#plan-type-booking-form-user-input-div{
+    padding: 1vw 0 0 0;
+}
+
+/*------------------UNDER Development----------------------*/
+.booking-form-user-input-back-continue-button-div {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.booking-form-user-input-back-button {
+    width: 8vw;
+    height: 2.3vw;
+
+    background-color: #ffffff;
+    color: #000000;
+
+    font-family: 'Akota Light';
+    font-size: 0.9vw;
+
+    border-color: #000000;
+    border-width: 0.06vw;
+    border-style: solid;
+    border-radius: 0.2vw;
+}
+
+.booking-form-user-input-back-button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.booking-form-user-input-continue-button {
+    width: 9vw;
+    height: 2.3vw;
+
+    margin-left: 0.5vw;
+
+    background-color: #000000;
+    color: #ffffff;
+
+    font-family: 'Akota Light';
+    font-size: 0.9vw;
+
+    border-color: #000000;
+    border-width: 0.06vw;
+    border-style: solid;
+    border-radius: 0.2vw;
+}
+
+.booking-form-user-input-continue-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.booking-form-user-input-div-plan-type-selection-div {
+    width: 20vw;
+    height: fit-content;
+
+    display: none;
+    flex-direction: column;
+    align-self: center;
+
+    border-width: 0.15vw;
+    border-color: #000000;
+    border-style: solid;
+}
+
+#booking-form-user-input-div-plan-type-hot-desk-selection-div {
+    border-color: #FF7439;
+}
+
+#booking-form-user-input-div-plan-type-day-office-selection-div {
+    border-color: #ca0909;
+}
+
+#booking-form-user-input-div-plan-type-dedicated-desk-selection-div {
+    border-color: #3957b3;
+}
+
+#booking-form-user-input-div-plan-type-flexible-desk-selection-div {
+    border-color: #bebc3d;
+}
+
+#booking-form-user-input-div-plan-type-virtual-office-selection-div {
+    border-color: #2d226b;  
+}
+
+#booking-form-user-input-div-plan-type-conference-room-selection-div {
+    border-color: #28bfa1; 
+}
+
+#booking-form-user-input-div-plan-type-alap-room-selection-div {
+    border-color: #427c41; 
+}
+
+#booking-form-user-input-div-plan-type-alochona-room-selection-div {
+    border-color: #6b3167; 
+}
+
+#booking-form-user-input-div-plan-type-colorburst-room-selection-div {
+    border-color: #ba851a; 
+}
+
+#booking-form-user-input-div-plan-type-zoom-call-room-selection-div {
+    border-color: #a3a3a3;
+}
+
+#booking-form-user-input-div-plan-type-podcast-studio-selection-div {
+    border-color: #643a3a;
+}
+
+.booking-form-user-input-div-plan-type-selection-header-div {
+    width: 100%;
+    height: 5.5vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border-width: 0 0 0.08vw 0;
+    border-color: #000000;
+    border-style: solid;
+}
+
+#booking-form-user-input-div-plan-type-hot-desk-selection-header-div {
+    border-color: #FF7439;
+}
+
+#booking-form-user-input-div-plan-type-day-office-selection-header-div {
+    border-color: #ca0909;
+}
+
+#booking-form-user-input-div-plan-type-dedicated-desk-selection-header-div {
+    border-color: #3957b3;
+}
+
+#booking-form-user-input-div-plan-type-flexible-desk-selection-header-div {
+    border-color: #bebc3d;
+}
+
+#booking-form-user-input-div-plan-type-virtual-office-selection-header-div {
+    border-color: #2d226b; 
+}
+
+#booking-form-user-input-div-plan-type-conference-room-selection-header-div {
+    border-color: #28bfa1; 
+}
+
+#booking-form-user-input-div-plan-type-alap-room-selection-header-div {
+    border-color: #427c41; 
+}
+
+#booking-form-user-input-div-plan-type-alochona-room-selection-header-div {
+    border-color: #6b3167; 
+}
+
+#booking-form-user-input-div-plan-type-colorburst-room-selection-header-div {
+    border-color: #ba851a; 
+}
+
+#booking-form-user-input-div-plan-type-zoom-call-room-selection-header-div {
+    border-color: #a3a3a3;
+}
+
+#booking-form-user-input-div-plan-type-podcast-studio-selection-header-div {
+    border-color: #643a3a;
+}
+
+.booking-form-user-input-div-plan-type-selection-header-div-title-p {
+    font-size: 1.6vw;
+    font-family: 'Akota Bold';
+    letter-spacing: -0.07vw;
+    font-weight: bold;
+
+    margin-left: 1.8vw;
+}
+
+#booking-form-user-input-div-plan-type-selection-header-div-hot-desk-title-p {
+    color: #FF7439;
+}
+
+#booking-form-user-input-div-plan-type-selection-header-div-day-office-title-p {
+    color: #ca0909;
+}
+
+#booking-form-user-input-div-plan-type-selection-header-div-dedicated-desk-title-p {
+    color: #3957b3;
+}
+
+#booking-form-user-input-div-plan-type-selection-header-div-flexible-desk-title-p {
+    color: #bebc3d;
+}
+
+#booking-form-user-input-div-plan-type-selection-header-div-virtual-office-title-p {
+    color: #2d226b;
+}
+
+#booking-form-user-input-div-plan-type-selection-header-div-conference-room-title-p {
+    color: #28bfa1;
+}
+
+#booking-form-user-input-div-plan-type-selection-header-div-alap-room-title-p {
+    color: #427c41;
+}
+
+#booking-form-user-input-div-plan-type-selection-header-div-alochona-room-title-p {
+    color: #6b3167;
+}
+
+#booking-form-user-input-div-plan-type-selection-header-div-colorburst-room-title-p {
+    color: #ba851a;
+}
+
+#booking-form-user-input-div-plan-type-selection-header-div-zoom-call-room-title-p {
+    color: #a3a3a3;
+}
+
+#booking-form-user-input-div-plan-type-selection-header-div-podcast-studio-title-p {
+    color: #643a3a;
+}
+
+.booking-form-user-input-div-plan-type-selection-header-div-bdt-p {
+    font-size: 0.9vw;
+    font-family: 'Akota Medium';
+    letter-spacing: -0.02vw;
+    color: #000000;
+
+    display: flex;
+    align-self: flex-end;
+
+    margin-bottom: 1vw;
+    margin-right: 2vw;
+}
+
+.booking-form-user-input-div-plan-type-selection-input-div {
+    width: 100%;
+    height: 5.6vw;
+
+    display: flex;
+    flex-direction: column;
+
+    border-width: 0 0 0.08vw 0;
+    border-color: #000000;
+    border-style: solid;
+}
+
+#booking-form-user-input-div-plan-type-hot-desk-selection-input-div {
+    border-color: #FF7439;
+}
+
+#booking-form-user-input-div-plan-type-day-office-selection-input-div {
+    border-color: #ca0909;
+}
+
+#booking-form-user-input-div-plan-type-dedicated-desk-selection-input-div {
+    border-color: #3957b3;
+}
+
+#booking-form-user-input-div-plan-type-flexible-desk-selection-input-div {
+    border-color: #bebc3d;
+}
+
+#booking-form-user-input-div-plan-type-virtual-office-selection-input-div {
+    border-color: #2d226b;  
+}
+
+#booking-form-user-input-div-plan-type-conference-room-selection-input-div {
+    border-color: #28bfa1; 
+}
+
+#booking-form-user-input-div-plan-type-alap-room-selection-input-div {
+    border-color: #427c41; 
+}
+
+#booking-form-user-input-div-plan-type-alochona-room-selection-input-div {
+    border-color: #6b3167; 
+}
+
+#booking-form-user-input-div-plan-type-colorburst-room-selection-input-div {
+    border-color: #ba851a; 
+}
+
+#booking-form-user-input-div-plan-type-zoom-call-room-selection-input-div {
+    border-color: #a3a3a3; 
+}
+
+#booking-form-user-input-div-plan-type-podcast-studio-selection-input-div {
+    border-color: #643a3a; 
+}
+
+.booking-form-user-input-div-plan-type-selection-description-div {
+    width: 100%;
+    height: 18vw;
+
+    display: flex;
+    flex-direction: column;
+}
